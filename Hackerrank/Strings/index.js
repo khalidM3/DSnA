@@ -18,3 +18,17 @@ function makeAnagram(a, b) {
   }
   return (a.length + b.length) - count
 }
+
+
+/*             Alternating Characters
+  Make a function that returns the count of adjacent matching characters
+  eg ABABABABAB should return 0
+     AAAA should return 3
+*/
+
+function alternatingCharacters( s ) {
+  let count = 0
+  for(let i=0; i<s.length; i++)
+    if( s[i] == s[i+1] ) count++
+  return count
+}
