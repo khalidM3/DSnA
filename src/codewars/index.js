@@ -25,7 +25,6 @@ function add(n){
   
   return fn;
 }
-
 let num = add(1)(2)(3)
 
 
